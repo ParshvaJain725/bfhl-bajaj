@@ -34,7 +34,7 @@ const App = () => {
       }
 
       // Call the backend API
-      const response = await axios.post('http://localhost:3000/bfhl', data);
+      const response = await axios.post('https://bfhl-backend-4bob.onrender.com/bfhl', data);
       setResponse(response.data);
     } catch (err) {
       setError('Invalid JSON input: ' + err.message);
